@@ -19,8 +19,6 @@ jobs:
         env:
           HTTP_PROXY: ${{ secrets.HTTP_PROXY }}
           HTTPS_PROXY: ${{ secrets.HTTP_PROXY }}
-          http_proxy: ${{ secrets.HTTP_PROXY }}
-          https_proxy: ${{ secrets.HTTP_PROXY }}
         run: pip install py-clob-client requests
 
       - name: Test proxy
@@ -43,8 +41,6 @@ jobs:
           WALLET: ${{ secrets.WALLET }}
           HTTP_PROXY: ${{ secrets.HTTP_PROXY }}
           HTTPS_PROXY: ${{ secrets.HTTP_PROXY }}
-          http_proxy: ${{ secrets.HTTP_PROXY }}
-          https_proxy: ${{ secrets.HTTP_PROXY }}
         run: python close.py
 
       - name: Print debug log (always)
