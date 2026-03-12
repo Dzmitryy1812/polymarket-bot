@@ -10,9 +10,6 @@ jobs:
       HTTP_PROXY: ${{ secrets.HTTP_PROXY }}
       HTTPS_PROXY: ${{ secrets.HTTPS_PROXY }}
       NO_PROXY: ${{ secrets.NO_PROXY }}
-      http_proxy: ${{ secrets.HTTP_PROXY }}
-      https_proxy: ${{ secrets.HTTPS_PROXY }}
-      no_proxy: ${{ secrets.NO_PROXY }}
 
     steps:
       - uses: actions/checkout@v4
